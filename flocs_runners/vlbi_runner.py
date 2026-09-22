@@ -578,6 +578,10 @@ def delay_calibration(
         Optional[bool],
         Parameter(help="Automatically select the best candidate delay calibrator(s) based on phasediff scores."),
     ] = False,
+    calibrate_leakage: Annotated[
+        Optional[bool],
+        Parameter(help="Add leakage calibration to the DI configuration file."),
+    ] = False,
     select_best_n_delay_calibrators: Annotated[
         Optional[int],
         Parameter(help="Select these N best scoring delay calibrators."),
